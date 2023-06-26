@@ -4,13 +4,15 @@ class CompanyCodePolicy < ApplicationPolicy
     def resolve
       scope.all
     end
+  end
+  def new?
+    create?
+  end
+  def create?
+    true
+  end
 
-    def new?
-      create?
-    end
-
-    def create?
-      record.user == user
-    end
+  def show?
+    true
   end
 end
