@@ -17,6 +17,7 @@ class CompanyCodesController < ApplicationController
   end
 
   def show
+    authorize @company_code
   end
 
   private
