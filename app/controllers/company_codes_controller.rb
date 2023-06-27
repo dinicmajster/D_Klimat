@@ -12,7 +12,7 @@ class CompanyCodesController < ApplicationController
     if @company_code.save
       redirect_to company_code_path(@company_code)
     else
-      render :new, status: :unprocessed_entity
+      render :new, status: :unprocessable_entity
     end
   end
 

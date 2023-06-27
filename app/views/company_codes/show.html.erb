@@ -1,3 +1,10 @@
-  <%= @company_code.cocod %>
-  <%= @company_code.entity %>
-  <%= @company_code.active %>
+<div class="container">
+  <div class="card-product mt-3">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <h2><%= @company_code.entity %></h2>
+      <p>Company code: <strong><%= @company_code.cocod %></strong></p>
+      <p>Active entity: <strong><%= @company_code.active %></strong></p>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,6 @@
   <%= simple_form_for @company_code do |f| %>
       <%= f.input :cocod, label: "Company code" %>
       <%= f.input :entity, label: "Entity name" %>
-      <%= f.submit %>
+      <%= f.button :submit, "Create!", class: "btn btn-flat" %>
     <% end %>
 </div>
