@@ -1,0 +1,7 @@
+<div class="container">
+  <% @company_codes.each do |company_code| %>
+    <ol>
+      <li><%= company_code.entity %> <%= company_code.cocod %></li>
+    </ol>
+  <% end %>
+</div>

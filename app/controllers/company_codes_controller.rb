@@ -1,6 +1,10 @@
 class CompanyCodesController < ApplicationController
   before_action :get_company_code, only: :show
 
+  def index
+    @company_codes = policy_scope(CompanyCode)
+  end
+
   def new
     @company_code = CompanyCode.new
     authorize @company_code
