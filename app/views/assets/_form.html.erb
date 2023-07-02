@@ -1,0 +1,12 @@
+ <div class="container">
+  <%= simple_form_for @asset do |f| %>
+      <%= f.association :company_code %>
+      <%= f.input :asset_type, label: "Type of asset" %>
+      <%= f.input :ownership %>
+      <%= f.input :submission, label: "Submission year" %>
+      <%= f.input :address %>
+      <%= f.input :company_code_id %>
+      <%= f.input :comment %>
+      <%= f.button :submit, "Create!", class: "btn btn-flat" %>
+    <% end %>
+</div>
